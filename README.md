@@ -8,8 +8,8 @@ This project demonstrates how to use playwright and LambdaTest together to run a
 First, clone this repository to your local machine.
 
 ```bash
-git clone https://github.com/LambdaTest/smartui-playwright-sample.git
-cd smartui-playwright-sample
+git clone https://github.com/muraleedaaranr/hyperexecute-smartui-playwright-sample-main
+cd hyperexecute-smartui-playwright-sample-main
 ```
 
 Next, install the necessary dependencies:
@@ -43,10 +43,17 @@ await page.evaluate((_) => {},
 
 Replace `<Your Screenshot Name>` with a relevant name for the screenshot. The screenshot will be saved with this name in the LambdaTest platform, and you can use it for comparing the UI changes over time.
 
-## Running Tests
+## Running Tests Locally
+
+```bash
+node playwright-smartui.js
+```
+
+
+## Running Tests in HyperExecute
 
 To run the test, execute:
 
 ```bash
-node playwright-smartui.js
+./hyperexecute --user <LT_USERNAME> --key <LT_ACCESSKEY> --config hyperexecute.yaml --verbose
 ```
